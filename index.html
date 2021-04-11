@@ -21,6 +21,11 @@
 var textElement = document.getElementById("note")
 
 function saveNote() {
-    
+    if(textElement.value == ""){
+        alert("Text empty!!");
+    } else {
+    localStorage.setItem("note",JSON.stringify(textElement.value));
+        alert("Note saved!!");
+    }
 }
 </script>
