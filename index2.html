@@ -15,6 +15,16 @@
 
 
 <script>
-
+(function displayNotes () {
+    console.log('in')
+    let Notes = getAllNotes();
+    let listWrapper = document.querySelector("#notes-list");
+    Notes.forEach(note => {
+        console.log(note)
+        let list = document.createElement("li")
+        list.innerHTML = note;
+        listWrapper.appendChild(list);
+    });
+})()
 
 </script>

@@ -21,6 +21,13 @@
 var textElement = document.getElementById("note")
 
 function saveNote() {
-    
+    if(textElement.value == ""){
+        alert("No text found. Please add a note!!");
+    } else {
+        let allNotes = getAllNotes();
+        allNotes.push(textElement.value)
+        localStorage.setItem("notes", JSON.stringify(allNotes))
+        alert("Note has been saved!!");
+    }
 }
 </script>
