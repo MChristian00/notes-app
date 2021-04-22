@@ -1,0 +1,33 @@
+body{
+    position: relative;
+    background-color: #E6EFF6;
+    width: 100%;
+    top: 20vh;
+    left: 30vw;
+}
+
+.grid-container{
+    padding: 7px;
+    width: 30vw;
+    height: 60vh;
+    display: grid;
+}
+
+.column-1{
+    border-radius: 12px 12px 0 0;
+    background-color: aquamarine;
+}
+
+.column-2{
+    display: flex;
+    gap: 50px;
+    background-color: rgb(32, 54, 47);
+}
+
+.subscription {
+    background-color: #2BB3B1;
+}
+
+.why-us{
+    background-color: #4ABEBD;
+}
